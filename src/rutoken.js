@@ -219,3 +219,7 @@ var rutoken = (function (my) {
 
     return my;
 }(rutoken || {}));
+
+if (typeof module !== 'undefined') {
+    module.exports = rutoken;
+}
