@@ -11,7 +11,7 @@ var rutoken = (function (my) {
         if (isFunction(target[member])) {
             return function () {
                 return target[member].apply(target, arguments);
-            }
+            };
         } else {
             return target[member];
         }
@@ -20,7 +20,7 @@ var rutoken = (function (my) {
     function returnPromise (promise) {
         return function () {
             return promise;
-        }
+        };
     }
 
     function initialize () {
@@ -153,7 +153,7 @@ var rutoken = (function (my) {
                         }, function (error) {
                             errorCallback(error.message);
                         });
-                    }
+                    };
                 })(this, this[m]);
             } else {
                 wrappedPlugin[m] = this[m];
@@ -192,7 +192,7 @@ var rutoken = (function (my) {
                             args.push(resolve, reject);
                             member.apply(plugin, args);
                         });
-                    }
+                    };
                 })(plugin, plugin[m]);
             } else {
                 wrappedPlugin[m] = plugin[m];
