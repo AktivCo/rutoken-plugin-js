@@ -1,0 +1,28 @@
+{
+  "name": "rutoken",
+  "version": "1.0.6",
+  "description": "Simplifies using Rutoken plugin",
+  "keywords": [
+    "rutoken",
+    "plugin"
+  ],
+  "main": "rutoken.min.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/AktivCo/rutoken-plugin-js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-environments": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.2"
+  },
+  "author": "CJSC Aktiv-Soft",
+  "contributors": [{
+    "name" : "Ilya Lyubimov",
+    "email" : "lubimov@rutoken.ru"
+  }],
+  "license": "BSD-2-Clause"
+}
