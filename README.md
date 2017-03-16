@@ -15,7 +15,7 @@ npm install rutoken
 ```js
 window.onload = function () {
     rutoken.ready.then(function () {
-        if (window.chrome) {
+        if (window.chrome || typeof InstallTrigger !== 'undefined') {
             return rutoken.isExtensionInstalled();
         } else {
             return Promise.resolve(true);

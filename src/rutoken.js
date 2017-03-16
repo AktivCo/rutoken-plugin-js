@@ -1,7 +1,7 @@
 var rutoken = (function (my) {
     var loadCallbacks = [];
     var pluginMimeType = "application/x-rutoken-pki";
-    var extension = window["ohedcglhbbfdgaogjhcclacoccbagkjg"];
+    var extension = window["C3B7563B-BF85-45B7-88FC-7CFF1BD3C2DB"];
 
     function isFunction (obj) {
         return !!(obj && obj.call && obj.apply);
@@ -31,7 +31,7 @@ var rutoken = (function (my) {
         window.rutokenLoaded = onPluginLoaded;
     }
 
-    function initializeChrome() {
+    function initializeExtension() {
         var readyPromise = extension.initialize().then(function () {
             return extension.isPluginInstalled();
         }).then(function (result) {
@@ -205,7 +205,7 @@ var rutoken = (function (my) {
     }
 
     if (extension) {
-        initializeChrome();
+        initializeExtension();
     } else if (navigator.mimeTypes && navigator.mimeTypes[pluginMimeType]) {
         initialize();
     } else {
