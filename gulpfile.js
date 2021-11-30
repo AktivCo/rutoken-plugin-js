@@ -6,21 +6,20 @@ var del = require('del'),
 
 var production = environments.production;
 
-gulp.task('clean', function () {
-	return del(['build']);
-});
+function clean () {
+    return del(['build']);
+};
 
-gulp.task('scripts', function () {
-	return gulp.src('src/*.js')
-		.pipe(production(rename({ suffix: '.min' })))
-		.pipe(production(uglify()))
-		.pipe(gulp.dest('build'));
-});
+function scripts () {
+    return gulp.src('src/*.js')
+        .pipe(production(rename({ suffix: '.min' })))
+        .pipe(production(uglify()))
+        .pipe(gulp.dest('build'));
+};
 
-gulp.task('default', ['clean'], function () {
-	gulp.start('scripts');
-});
+function watch () {
+    return gulp.watch('src/*.js', ['scripts']);
+};
 
-gulp.task('watch', function () {
-	gulp.watch('src/*.js', ['scripts']);
-});
+exports.watch = watch;
+exports.default = gulp.series(clean, scripts);

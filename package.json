@@ -1,28 +1,31 @@
 {
-  "name": "rutoken",
-  "version": "1.0.8",
+  "name": "@aktivco/rutoken-plugin",
+  "version": "1.0.9",
   "description": "Simplifies using Rutoken plugin",
   "keywords": [
     "rutoken",
-    "plugin"
+    "rutoken plugin",
+    "рутокен",
+    "рутокен плагин"
   ],
-  "main": "rutoken.min.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/AktivCo/rutoken-plugin-js"
+  "browser": "rutoken-plugin.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AktivCo/rutoken-plugin-js"
   },
   "dependencies": {},
   "devDependencies": {
     "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-environments": "^0.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.4.2"
+    "gulp": "^4.0.2",
+    "gulp-environments": "^1.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
   },
-  "author": "CJSC Aktiv-Soft",
-  "contributors": [{
-    "name" : "Ilya Lyubimov",
-    "email" : "lubimov@rutoken.ru"
-  }],
+  "author": "Aktiv-Soft JSC",
+  "contributors": [
+    {
+      "name": "Ilya Lyubimov"
+    }
+  ],
   "license": "BSD-2-Clause"
 }

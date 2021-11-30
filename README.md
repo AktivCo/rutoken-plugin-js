@@ -7,7 +7,7 @@
 ## Установка
 
 ```sh
-npm install rutoken
+npm install @aktivco/rutoken-plugin
 ```
 
 ## Пример использования
@@ -77,4 +77,4 @@ window.onload = function () {
 
 ## Лицензия
 
-Исходный код распространяется под лицензией Simplified BSD. См. файл LICENSE в корневой директории проекта.
+Исходный код распространяется под лицензией Simplified BSD. См. файл [LICENSE](LICENSE) в корневой директории проекта.
