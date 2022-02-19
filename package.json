@@ -1,6 +1,6 @@
 {
   "name": "@aktivco/rutoken-plugin",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simplifies using Rutoken plugin",
   "keywords": [
     "rutoken",
@@ -9,6 +9,7 @@
     "рутокен плагин"
   ],
   "browser": "rutoken-plugin.min.js",
+  "main": "rutoken-plugin.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AktivCo/rutoken-plugin-js"
