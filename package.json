@@ -1,6 +1,6 @@
 {
   "name": "@aktivco/rutoken-plugin",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simplifies using Rutoken plugin",
   "keywords": [
     "rutoken",
@@ -20,6 +20,9 @@
     "gulp-environments": "^1.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "gulp": "gulp"
   },
   "author": "Aktiv-Soft JSC",
   "contributors": [

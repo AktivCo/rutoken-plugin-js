@@ -15,7 +15,9 @@ npm install @aktivco/rutoken-plugin
 ```js
 window.onload = function () {
     rutoken.ready.then(function () {
-        if (window.chrome || typeof InstallTrigger !== 'undefined') {
+        const isFirefox = !!window.navigator.userAgent.match(/firefox/i) && !window.navigator.userAgent.match(/seamonkey/i);
+
+        if (window.chrome || isFirefox) {
             return rutoken.isExtensionInstalled();
         } else {
             return Promise.resolve(true);
